@@ -61,7 +61,7 @@ const Search = () => {
             ( <div className="bg-dark bg-opacity-50 px-4 py-2">
                 <h2 className="card-title mt-3">{data.name}</h2>               
                 {data.main ? <p className="card-text lead">{date} ,{time} </p> :null }
-                {emoji ? <img src={`http://openweathermap.org/img/w/${emoji}.png`} className="w-50 h-25"/> :null}
+                {emoji ? <img src={`http://openweathermap.org/img/w/${emoji}.png`} alt='...' className="w-50 h-25"/> :null}
                 {temp ? <h1>{temp} &deg;C</h1> :null}
                 {data.weather ? <p className="lead fw-bolder mb-1"> {data.weather[0].main}</p> :null}
                 {temp_min ? <span className="card-text lead">{temp_min} &deg;C{" "} to{" "}</span> :null}
