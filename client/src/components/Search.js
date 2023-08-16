@@ -18,7 +18,7 @@ const Search = () => {
     e.preventDefault();
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/weather/${location}`
+        `https://weather-date-time.vercel.app/api/weather/${location}`
       );
       setData(response.data);
       setLocation("");
